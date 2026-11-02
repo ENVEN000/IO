@@ -25,7 +25,7 @@
   if (year) year.textContent = new Date().getFullYear();
 
   // ---- Animación de aparición al hacer scroll ----
-  var targets = document.querySelectorAll(".card, .feature, .mini-card, .duo-card, .steps li, .faq details, .section-head, .stats-strip");
+  var targets = document.querySelectorAll(".card, .feature, .mini-card, .duo-card, .steps li, .faq details, .section-head, .stats-strip, .quote, .brand-tile");
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
   if ("IntersectionObserver" in window) {
@@ -48,8 +48,8 @@
     Opción A (recomendada): crea un formulario gratis en https://formspree.io y pega aquí su URL.
     Opción B: déjalo vacío y el formulario abrirá el correo del usuario con el mensaje prellenado (mailto).
   */
-  var FORM_ENDPOINT = "";            // ej: "https://formspree.io/f/xxxxxxx"
-  var FALLBACK_EMAIL = "contacto@tudominio.com";
+  var FORM_ENDPOINT = "https://formspree.io/f/xoeepaqd";            // ej: "https://formspree.io/f/xxxxxxx"
+  var FALLBACK_EMAIL = "mc@enven.org";
 
   var form = document.getElementById("quote-form");
   var note = document.getElementById("form-note");

@@ -70,6 +70,9 @@ p { margin: 0 0 1em; }
 .link-arrow { color: var(--primary); font-weight: 600; }
 .link-arrow:hover { text-decoration: underline; }
 
+.btn-wa { background: #25d366; color: #05220f; border-color: #25d366; box-shadow: 0 10px 26px rgba(37, 211, 102, .28); }
+.btn-wa:hover { background: #1fbd5a; border-color: #1fbd5a; box-shadow: 0 14px 32px rgba(37, 211, 102, .42); }
+
 /* ===== Header ===== */
 .site-header {
   position: sticky; top: 0; z-index: 50;
@@ -110,7 +113,7 @@ p { margin: 0 0 1em; }
   opacity: .6;
 }
 .hero-inner { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
-.hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; }
+.hero h1 { font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 800; }
 .grad { background: linear-gradient(120deg, var(--primary), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .lead { color: var(--muted); font-size: 1.12rem; max-width: 60ch; }
 .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 30px; }
@@ -208,6 +211,31 @@ p { margin: 0 0 1em; }
 .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 .pills span { padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255, 255, 255, .04); font-weight: 600; font-size: .95rem; }
 
+/* ===== Marcas ===== */
+.brands { padding: 72px 0; border-bottom: 1px solid var(--line); }
+.brands .section-head { margin-bottom: 36px; }
+.brands .section-head h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
+.brand-group { margin-bottom: 30px; }
+.brand-group h3 { font-family: var(--mono); font-size: .8rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.brand-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.brand-grid .brand-tile { flex: 0 0 calc(20% - 10px); }
+.brand-tile {
+  display: grid; place-items: center; text-align: center;
+  min-height: 64px; padding: 10px;
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px;
+  font-size: 1.05rem; font-weight: 700; letter-spacing: .02em; color: #c9d6f0;
+  transition: border-color .25s, color .25s, transform .25s;
+}
+.brand-tile:hover { border-color: var(--primary); color: #fff; transform: translateY(-3px); }
+.brand-tile.more { font-size: .95rem; font-weight: 500; color: var(--muted); border-style: dashed; }
+.brand-note { text-align: center; color: var(--muted); font-size: .8rem; margin: 22px 0 0; }
+
+/* ===== Testimonios ===== */
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 56px; }
+.quote { position: relative; margin: 0; padding: 38px 28px 28px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); }
+.quote::before { content: "\201C"; position: absolute; top: 6px; left: 22px; font-size: 4rem; line-height: 1; color: var(--primary); opacity: .7; font-family: Georgia, serif; }
+.quote p { margin: 0; font-size: 1.02rem; color: var(--text); }
+
 /* ===== FAQ ===== */
 .faq-wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
 .faq-wrap .section-head { margin: 0; position: sticky; top: 100px; }
@@ -266,6 +294,8 @@ p { margin: 0 0 1em; }
 
 /* ===== Responsive ===== */
 @media (max-width: 1020px) {
+  .brand-grid .brand-tile { flex-basis: calc(33.333% - 8px); }
+  .quotes { grid-template-columns: 1fr; }
   .cards-3 { grid-template-columns: repeat(2, 1fr); }
   .cards-4 { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
@@ -289,6 +319,7 @@ p { margin: 0 0 1em; }
   .nav-cta-mobile { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
 }
 @media (max-width: 640px) {
+  .brand-grid .brand-tile { flex-basis: calc(50% - 6px); }
   .section { padding: 64px 0; }
   .cards-3, .cards-4, .steps { grid-template-columns: 1fr; }
   .stats-strip { grid-template-columns: repeat(2, 1fr); }

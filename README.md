@@ -1,4 +1,4 @@
-# CORENODE – Sitio web para centros de datos
+# ENVEN – Sitio web de centros de datos
 
 Sitio estático (HTML + CSS + JS) listo para **GitHub Pages**. Sin dependencias ni proceso de build.
 
@@ -33,3 +33,7 @@ GitHub Pages no procesa formularios. Dos opciones en `js/main.js`:
 
 - **Formspree (recomendado):** crea un formulario en formspree.io y pega su URL en `FORM_ENDPOINT`.
 - **Sin configurar nada:** el formulario abre el correo del usuario con el mensaje prellenado (`mailto:`).
+
+## Archivos de SEO
+
+`robots.txt`, `sitemap.xml` e `img/og-image.png` (vista previa al compartir). El archivo `CNAME` ya está en tu repositorio; no lo sobrescribas.
