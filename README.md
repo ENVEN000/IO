@@ -1,4 +1,4 @@
-# ENVEN · io.enven.org
+# DataCenter Venezuela · io.enven.org
 
 Sitio estático multipágina para **GitHub Pages**, dominio `io.enven.org`.
 
@@ -22,7 +22,7 @@ css/ js/ img/
 Envíe `https://io.enven.org/sitemap.xml` en Search Console y solicite indexación de la portada, `/certificacion/` y `/servicios/`.
 
 ## Formulario
-`FORM_ENDPOINT` en `js/main.js` (Formspree). Asunto: «Solicitud de cotización - ENVEN IO».
+`FORM_ENDPOINT` en `js/main.js` (Formspree). Asunto: «Solicitud de cotización - DataCenter Venezuela».
 
 ## Nota sobre la sección de certificación
 Menciona equipos de la clase Fluke DTX-1800 / DSX / Versiv como ejemplo de capacidades. Ajuste los textos al equipo que realmente utilice y mantenga la calibración vigente.
