@@ -309,3 +309,12 @@ p { margin: 0 0 1em; }
 .nav-pill .brand span{letter-spacing:.01em;font-size:1.02rem}
 .nav-pill .main-nav{margin-left:14px}
 @media(max-width:1180px){.nav-cta .btn-wa{display:none}}
+
+/* ===== Accesibilidad y tipografía moderna (v5) ===== */
+:root { color-scheme: dark; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
