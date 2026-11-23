@@ -383,3 +383,17 @@ p, li { text-wrap: pretty; }
 .main-nav { align-items: stretch; }
 .nav-item > a { align-self: center; }
 .mega { top: calc(100% - 4px); padding-top: 18px; }
+
+/* ===== Iconos ===== */
+.ico { display: block; flex: none; }
+.doc-head .container { position: relative; }
+.head-ico { width: 72px; height: 72px; border-radius: 20px; display: grid; place-items: center; color: #fff; margin-bottom: 18px; background: radial-gradient(circle at 30% 20%, rgba(31, 182, 255, .28), transparent 70%), rgba(255, 255, 255, .04); border: 1px solid var(--line); }
+.head-ico .ico { width: 40px; height: 40px; }
+@media (min-width: 900px) {
+  .head-ico { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 132px; height: 132px; border-radius: 32px; margin: 0; }
+  .head-ico .ico { width: 70px; height: 70px; }
+  .doc-head .lead { max-width: min(62ch, 100% - 170px); }
+}
+.tile-ico { position: absolute; top: 16px; right: 18px; color: #fff; opacity: .92; }
+.grp-h { display: flex; align-items: center; gap: 12px; }
+.grp-h .ico { color: #fff; width: 30px; height: 30px; padding: 6px; box-sizing: content-box; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, .04); }
