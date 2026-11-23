@@ -376,3 +376,10 @@ p, li { text-wrap: pretty; }
 .m-acc { display: grid; gap: 2px; } .m-acc[open] { padding-bottom: 6px; }
 .mega-all { margin-left: 0; }
 .m-acc a { display: block; }
+/* El área de cada ítem ocupa toda la altura de la píldora para que el panel no se cierre al bajar el cursor */
+.main-nav { align-self: stretch; margin-top: -8px; margin-bottom: -8px; }
+.nav-item { align-items: center; }
+.mega { padding-top: 14px; }
+.main-nav { align-items: stretch; }
+.nav-item > a { align-self: center; }
+.mega { top: calc(100% - 4px); padding-top: 18px; }
